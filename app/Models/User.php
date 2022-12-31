@@ -37,4 +37,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function counters()
+    {
+        return $this->hasMany(Counter::class);
+    }
+
+    /**
+     * The answers that belong to the user.
+     */
+    public function answers()
+    {
+        return $this->hasMany(Answer::class);
+    }
 }
