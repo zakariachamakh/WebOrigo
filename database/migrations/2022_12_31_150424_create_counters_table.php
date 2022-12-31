@@ -15,7 +15,13 @@ class CreateCountersTable extends Migration
     {
         Schema::create('counters', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->integer('good_count')->default(0);
+            $table->integer('wrong_count')->default(0);
             $table->timestamps();
+            //relationship
+            $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
