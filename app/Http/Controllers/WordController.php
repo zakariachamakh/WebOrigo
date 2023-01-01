@@ -11,6 +11,6 @@ class WordController extends Controller
 {
     public function index()
     {
-        return  WordResource::collection(Word::inRandomOrder()->paginate(5));
+        return  WordResource::collection(Word::inRandomOrder()->paginate(20));
     }
 }
