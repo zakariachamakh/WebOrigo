@@ -14,7 +14,7 @@ class Counter extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'correct_count', 'incorrect_count', 'total_count',
+        'user_id', 'good_count', 'wrong_count', 'total_count',
     ];
 
     /**

@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// Get a random word
+Route::get('/words', [\App\Http\Controllers\WordController::class, 'index']);
+Route::post('/check-answer', [\App\Http\Controllers\AnswerController::class,"checkAnswer"]);
+Route::post('/counter', [\App\Http\Controllers\CounterController::class,"storeCounter"]);

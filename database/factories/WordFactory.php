@@ -24,7 +24,7 @@ class WordFactory extends Factory
         return [
             'english' => $this->faker->word,
             'serbian' => $this->faker->word,
-            'image_url' => $this->faker->imageUrl(),
+            'image_url' => 'https://pbs.twimg.com/media/FQOhGy6XEAMYB-X.jpg?name=large',
         ];
     }
 }
