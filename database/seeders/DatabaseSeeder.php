@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 
-use App\Models\answer;
-use App\Models\counter;
+use App\Models\Answer;
+use App\Models\Counter;
 use App\Models\User;
-use App\Models\word;
+use App\Models\Word;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
